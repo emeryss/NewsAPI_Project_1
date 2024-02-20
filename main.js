@@ -8,7 +8,7 @@ const getLatestNews = async ()=>{
     let page = 1
     let pageSize = 20
     let category = "technology"
-    const url = new URL(`http://https://newsapi-1.netlify.app?${category}&${page}&${pageSize}`);
+    const url = new URL(`https://newsapi-1.netlify.app?${category}&${page}&${pageSize}`);
     // 여기까지 noona news API
 
     //const url = new URL(`https://newsapi.org/v2/top-headlines?country=us&apiKey=${API_KEY}`);
