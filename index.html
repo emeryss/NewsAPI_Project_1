@@ -12,38 +12,28 @@
     <div class="side-menu" id="mySidenav">
         <button class="closebtn" onclick="closeNav()">&times;</button>
         <div class="side-menu-list" id="menu-list">
-            <button>Sport</button>
-            <button>Tech</button>
-            <button>World</button>
-            <button>Finance</button>
-            <button>Politics</button>
             <button>Business</button>
-            <button>Economics</button>
             <button>Entertainment</button>
-            <button>Beauty</button>
-            <button>Travel</button>
-            <button>Music</button>
-            <button>Food</button>
+            <button>General</button>
+            <button>Health</button>
             <button>Science</button>
-            <button>Gaming</button>
-            <button>Energy</button>
+            <button>Sports</button>
+            <button>Technology</button>
         </div>
 
-</div>
-<!-- 생략 -->
+    </div>
 
-<!-- 햄버거 버튼 추가  -->
- <i class="fas fa-bars hide icon-button" onclick="openNav()"></i>
-
-<!-- Search Box -->
- <i class="fas fa-search icon-button" onclick="openSearchBox()"></i>
- <span id="input-area">
-     <input type="text" id="search-input" placeholder="search" />
-     <button class="search-button" onclick="searchNews()">Go</button>
- </span>
-
- <!-- Main section -->
     <section class = "container">
+        <!-- 햄버거 버튼 추가  -->
+        <i class="fas fa-bars hide icon-button" onclick="openNav()"></i>
+
+         <!-- Search Box -->
+        <i class="fas fa-search icon-button" onclick="openSearchBox()"></i>
+        <span id="input-area">
+            <input type="text" id="search-input" placeholder="search" />
+            <button class="search-button" onclick="getNewsByKeyword()">Go</button>
+        </span>
+        
         <section>
             <div class="head-line">
                 <svg viewBox="0 0 184 25" fill="#000" aria-hidden="true">
@@ -54,21 +44,13 @@
                 
             </div>
             <div class="menus">
-                <button>Sport</button>
-                <button>Tech</button>
-                <button>World</button>
-                <button>Finance</button>
-                <button>Politics</button>
                 <button>Business</button>
-                <button>Economics</button>
                 <button>Entertainment</button>
-                <button>Beauty</button>
-                <button>Travel</button>
-                <button>Music</button>
-                <button>Food</button>
+                <button>General</button>
+                <button>Health</button>
                 <button>Science</button>
-                <button>Gaming</button>
-                <button>Energy</button>
+                <button>Sports</button>
+                <button>Technology</button>
             </div>
             
 
