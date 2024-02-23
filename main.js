@@ -6,10 +6,8 @@ menus.forEach((menu) =>
     menu.addEventListener("click", (event) => getNewsByCategory(event))
 );
 
-let url = new URL(
-    `https://newsapi.org/v2/top-headlines?country=us&apiKey=${API_KEY}`
-);
-// let url = new URL(`https://newsapi-1.netlify.app/top-headlines?country=kr`)
+//let url = new URL(`https://newsapi.org/v2/top-headlines?country=us&apiKey=${API_KEY}`);
+let url = new URL(`https://newsapi-1.netlify.app/top-headlines?country=kr`)
 
 const getNews = async () => {
     try {
@@ -30,28 +28,22 @@ const getNews = async () => {
 };
 
 const getLatestNews = async () => {
-    url = new URL(
-        `https://newsapi.org/v2/top-headlines?country=us&apiKey=${API_KEY}`
-    );
-    //url = new URL(`https://newsapi-1.netlify.app/top-headlines?country=kr`);
+    //url = new URL(`https://newsapi.org/v2/top-headlines?country=us&apiKey=${API_KEY}`);
+    url = new URL(`https://newsapi-1.netlify.app/top-headlines?country=kr`);
     getNews();
 };
 
 const getNewsByCategory = async (event) => {
     const category = event.target.textContent.toLowerCase();
-    url = new URL(
-        `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=${API_KEY}`
-    );
-    //url = new URL(`https://newsapi-1.netlify.app/top-headlines?country=kr&category=${category}`);
+    //url = new URL(`https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=${API_KEY}`    );
+    url = new URL(`https://newsapi-1.netlify.app/top-headlines?country=kr&category=${category}`);
     getNews();
 };
 
 const getNewsByKeyword = async () => {
     const keyword = document.getElementById("search-input").value;
-    url = new URL(
-        `https://newsapi.org/v2/top-headlines?country=us&q=${keyword}&apiKey=${API_KEY}`
-    );
-    // url = new URL(`https://newsapi-1.netlify.app/top-headlines?q=${keyword}&country=kr`);
+    //url = new URL(`https://newsapi.org/v2/top-headlines?country=us&q=${keyword}&apiKey=${API_KEY}`    );
+    url = new URL(`https://newsapi-1.netlify.app/top-headlines?q=${keyword}&country=kr`);
     getNews();
 };
 
