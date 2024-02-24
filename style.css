@@ -57,14 +57,19 @@
   
 .side-menu .closebtn {
     position: absolute;
-    top: 0;
+    top: -0;
     right: 25px;
-    font-size: 36px;
+    font-size: 40px;
     margin-left: 50px;
     border: none;
     background: none;
 }
-  
+
+.side-menu .closebtn:hover{
+    background-color: beige;
+    border-radius: 500px;
+}
+
 .side-menu-list {
     display: flex;
     flex-direction: column;
@@ -75,3 +80,8 @@
     background-color: beige;
     border-radius: 3px;
 }
+
+.pagination-nav {
+    display: flex;
+    justify-content: center;
+  }
